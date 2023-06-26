@@ -4,8 +4,8 @@ import { useState, useEffect } from 'react';
 import { ReviewsContainer } from './Reviews.styled';
 
 const Reviews = () => {
-  const { movieId } = useParams('movieId');
-  const [reviews, setReviews] = useState([]);
+const { movieId } = useParams('movieId');
+const [reviews, setReviews] = useState([]);
 
   useEffect(() => {
     fetchMovieReviews(movieId).then(setReviews);
